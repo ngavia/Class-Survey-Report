@@ -1,47 +1,43 @@
-,Birthday,Gender,Breathold,position1,Breathold2,position,pulse_start,time_down_up,pulse_after_down_up,height_in,Age_yrs,arm_shoulder_fingertip_inches,right hand_thumb_pinkty_ inch,handed_R_or_L,Vetran_Y_or_N,Believe_big_bang,Ever _Smoke_cig,Ever Vote,will_vote_Nov,will vote Nov (Y or N),"preferred  class seat(Front, Middle, Back)"
-1,,,,,,,,,,,,,,,,,,,,,
-2,240,F,21,up,18,down,86,26,110,65,22,27,6 1/2,R,N,N,N,N,Y,$33 ,Front
-3,24,F,23,up,29,down,78,24,115,65,21,24,8 1/2,R,N,N,N,Y,Y,$15 ,Front
-4,190,F,22,up,25,down,74,24,84,60,48,21,6.5,R,N,N,Y,Y,Y,$55.00 ,Front
-5,,,,,,,,,,,,,,,,,,,,,
-6,,,,,,,,,,,,,,,,,,,,,
-7,170,M,45,down,25,up,78,20,115,73,21,30,9.125,R,N,Y,Y,Y,Y,$100 ,Front
-8,271,M,85,down,85,up,65,9,120,69,20,27,9 1/8,R,N,Y,N,N,Y,$80 ,middle
-9,345,M,58,down,36,up,98,25,125,70,20,32,9,R,N,Y,Y,Y,Y,$0 ,Middle
-10,272,M,31,down,28,up,98,25,125,,25,23,8 1/4,R,N,Y,N,N,N,$0 ,Middle
-11,,M,14,up,15,up,82,,,,,,,,,,,,,,
-12,84,M,31,up,46,down,70,20,130,,21,26,8 1/8,R,N,Y,N,N,N,$0 ,Middle
-13,,,,,,,,,,,,,,,,,,,,,
-14,170,M,35,up,32,down,68,30,120,70,20,28,8 .5,R,N,Y,N,Y,Y,$5 ,Middle
-15,47,F,45,down,30,up,70,16,104,62,25,27,8,R,N,N,Y,Y,Y,$66 ,Middle
-16,,,,,,,,,,,,,,,,,,,,,
-17,,,,,,,,,,,,,,,,,,,,,
-18,,,,,,,,,,,,,,,,,,,,,
-19,,,,,,,,,,,,,,,,,,,,,
-20,,,,,,,,,,,,,,,,,,,,,
-21,176,M,25,up,30,down,55,10,110,69,21,28,7.5,R,N,Y,Y,Y,Y,0.76,Front
-22,208,F,26,up,34,down,68,18,110,66,19,29,8,R,N,N,N,N,Y,$8 ,Middle
-23,96,F,33,up,34,down,88,25,106,63,19,27,6 1/2,R,N,N,N,N,Y,$10 ,Middle
-24,145,M,48,down,56,up,66,19,105,69,20,,,R,N,Y,N,Y,Y,$4 ,Middle
-25,,,,,,,,,,,,,,,,,,,,,
-26,,,,,,,,,,,,,,,,,,,,,
-27,40,M,60,down,60,up,108,20,120,47 .5,19,34,8.375,R,N,N,N,N,Y,64,Middle
-28,,,,,,,,,,,,,,,,,,,,,
-29,164,M,22,down,16,down,60,15,64,75,34,,8,L,N,N,Y,Y,Y,0,Middle
-30,29,M,23,up,31,down,102,27,126,67,20,28,8,R,N,Y,N,Y,Y,$13.76 ,Back
-31,,,,,,,,,,,,,,,,,,,,,
-32,303,M,27,up,45,up,68,29,132,72,28,34,9 7/8,R,N,N,Y,Y,N,0,Back
-33,,,,,,,,,,,,,,,,,,,,,
-34,215,F,45,up,32,down,78,20,123,58,29,28,7,R,N,n,y,Y,Y,$25 ,Middle
-35,118,M,45,down,40,up,70,,120,66,23,,7,R,N,N,N,Y,Y,0,middle
-36,70,F,25,up,31,down,69,25,107,66,24,26,7,R,N,N,N,Y,Y,$60.25 ,Back
-37,182,F,26,up,38,down,59,16,5,65,21,25,8,R,N,Y,N,Y,N,$95 ,Middle
-38,102,M,36,down,32,up,66,22,130,70,19,,,,,,,,,,
-39,168,M,37,down,48,up,98,21,110,62,20,2.5,8,             R,           N,                          N,                         N,                          Y,                                N,$1 ,                                      Back
-40,,,,,,,,,,,,,,,,,,,,,
-41,348,F,20,down,20,,72,40,96,64,19,28,6,R,N,Y,N,N,Y,84 cents,front
-42,,,,,,,,26,102,65,38,28,6,R,N,N,N, Y,Y,$5.30 ,middle
-43,234,F,28,up,28,down,66,,,65,36,,,,,,,,,,
-44,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,
-teacher,43,,,,,,,,,,,,,,,,,,,,
+Birthday,Gender,Breathold,position1,Breathold2,position,pulse_start,time_down_up,pulse_after_down_up,height_in,Age_yrs,arm_shoulder_fingertip_inches,right hand_thumb_pinkty_ inch,handed_R_or_L,Vetran_Y_or_N,Believe_big_bang,Ever _Smoke_cig,Ever Vote,will_vote_Nov,will vote Nov (Y or N),"preferred  class seat(Front, Middle, Back)"
+240,F,21,up,18,down,86,26,110,65,22,27,6.513,R,N,N,N,N,Y,$33 ,Front
+24,F,23,up,29,down,78,24,115,65,21,24,8.5,R,N,N,N,Y,Y,$15 ,Front
+190,F,22,up,25,down,74,24,84,60,48,21,6.5,R,N,N,Y,Y,Y,$55.00 ,Front
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+170,M,45,down,25,up,78,20,115,73,21,30,9.125,R,N,Y,Y,Y,Y,$100 ,Front
+271,M,85,down,85,up,65,9,120,69,20,27,9.125,R,N,Y,N,N,Y,$80 ,middle
+345,M,58,down,36,up,98,25,125,70,20,32,9,R,N,Y,Y,Y,Y,$0 ,Middle
+272,M,31,down,28,up,98,25,125,,25,23,8.25,R,N,Y,N,N,N,$0 ,Middle
+,M,14,up,15,up,82,,,,,,,,,,,,,,
+84,M,31,up,46,down,70,20,130,,21,26,8.125,R,N,Y,N,N,N,$0 ,Middle
+,,,,,,,,,,,,,,,,,,,,
+170,M,35,up,32,down,68,30,120,70,20,28,8.502,R,N,Y,N,Y,Y,$5 ,Middle
+47,F,45,down,30,up,70,16,104,62,25,27,8,R,N,N,Y,Y,Y,$66 ,Middle
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+176,M,25,up,30,down,55,10,110,69,21,28,7.5,R,N,Y,Y,Y,Y,0.76,Front
+208,F,26,up,34,down,68,18,110,66,19,29,8,R,N,N,N,N,Y,$8 ,Middle
+96,F,33,up,34,down,88,25,106,63,19,27,6.5,R,N,N,N,N,Y,$10 ,Middle
+145,M,48,down,56,up,66,19,105,69,20,,,R,N,Y,N,Y,Y,$4 ,Middle
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+40,M,60,down,60,up,108,20,120,47.5,19,34,8.375,R,N,N,N,N,Y,64,Middle
+,,,,,,,,,,,,,,,,,,,,
+164,M,22,down,16,down,60,15,64,75,34,,8,L,N,N,Y,Y,Y,0,Middle
+29,M,23,up,31,down,102,27,126,67,20,28,8,R,N,Y,N,Y,Y,$13.76 ,Back
+,,,,,,,,,,,,,,,,,,,,
+303,M,27,up,45,up,68,29,132,72,28,34,9.875,R,N,N,Y,Y,N,0,Back
+,,,,,,,,,,,,,,,,,,,,
+215,F,45,up,32,down,78,20,123,58,29,28,7,R,N,n,y,Y,Y,$25 ,Middle
+118,M,45,down,40,up,70,,120,66,23,,7,R,N,N,N,Y,Y,0,middle
+70,F,25,up,31,down,69,25,107,66,24,26,7,R,N,N,N,Y,Y,$60.25 ,Back
+182,F,26,up,38,down,59,16,5,65,21,25,8,R,N,Y,N,Y,N,$95 ,Middle
+102,M,36,down,32,up,66,22,130,70,19,,,,,,,,,,
+168,M,37,down,48,up,98,21,110,62,20,2.5,8,             R,           N,                          N,                         N,                          Y,                                N,$1 ,                                      Back
+,,,,,,,,,,,,,,,,,,,,
+348,F,20,down,20,,72,40,96,64,19,28,6,R,N,Y,N,N,Y,84 cents,front
+,,,,,,,26,102,65,38,28,6,R,N,N,N, Y,Y,$5.30 ,middle
+234,F,28,up,28,down,66,,,65,36,,,,,,,,,,

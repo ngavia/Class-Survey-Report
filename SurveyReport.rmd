@@ -14,6 +14,19 @@ require(tigerstats)
 # Introduction
 
 <!--In this section you explain what you are trying to show.  Where did the data come from?  What is the research or other question you are trying to answer?!-->
+  
+We start by loading the data into 2 data frames
+
+```{r}
+library(readr)
+Sec02 <- read_csv("Class_Survey_Sec02.csv")
+Sec23 <- read_csv("Class_Survey_Sec23.csv")
+Sec02 <- mutate(Sec02,sect="PM")
+Sec23 <- mutate(Sec23,sect="Eve")
+alldat <- bind_rows(Sec02,Sec23)
+```
+
+
 
 # Methods
 
