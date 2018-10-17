@@ -1,8 +1,10 @@
 ---
-title: "Choose a Good Title!"
-author: "Put your name here!"
-date: "put the date here"
-output: word_document
+title: "Class Survey"
+author: "Natalie Gavia"
+date: "10/15/2018"
+output:
+  html_document:
+    df_print: paged
 ---
 
 ```{r include=FALSE,echo=FALSE}
@@ -27,10 +29,22 @@ alldat <- bind_rows(Sec02,Sec23)
 ```
 
 
+```{r}
+write.csv(x=alldat,file="alldata.csv")
+```
+
+
 
 # Methods
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
+Question 1:whether there are differences in average age between the two classes?
+
+We took the data and merged the two class data. Then we produced a summary data called "alldat" that allowed us to section the two calsses into "pm" and "eve". We then compared the age average. That allowed us to answer our question. There are appoximately 40 responses in each data set and83 overall.
+
+Question 3:differences between time up and down the stairs between guys and gals
+
+We took the data and merged the two class data. Then we produced a summart data called "alldat" taht allowed us to section the two data between "M" and "F". We then compared both genders time going down and up the stairs.From the data, it seems Males have a faster time going down and up the stairs compared to females.
 
 #Results
 
@@ -41,16 +55,91 @@ alldat <- bind_rows(Sec02,Sec23)
 ### Graphical Descriptive Results
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+Question 1:
+ Once we graphed our data, we found that there was a higher age group in the evening class in comparison to the pm class.
+    
+```{r}
+Boxplot(Age_yrs~sect, data=alldat, id=list(method="y"))
+```
+The boxplot shows that the eve data looks higher than the pm class. The two boxes are almost  disjoint with the eve class higher than the PM class. This indicates a possible difference with the evening class perhaps being older students.
+
+Question 3:
+
+```{r}
+Boxplot(time_down_up~Gender, data=alldat, id=list(method="y"))
+```
+  From the both plot, it seems Females have a slower time going down and up the stairs compared to males. This is evident by females bar being higher than males.
+
+
 
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+Question 1:
+
+```{r}
+numSummary(alldat[,"Age_yrs", drop=FALSE], groups=alldat$sect, 
+  statistics=c("mean", "sd", "IQR", "quantiles"), quantiles=c(0,.25,
+  .5,.75,1))
+```
+ From the results above, the evening class seems to be 5 years older than the PM class.
+
+Question 3:
+
+```{r}
+numSummary(alldat[,"time_down_up", drop=FALSE], groups=alldat$Gender, 
+  statistics=c("mean", "sd", "IQR", "quantiles"), quantiles=c(0,.25,
+  .5,.75,1))
+```
+ From the numerical summary, it looks like the average speed of males going down and up the stairs are faster than Females.
+
 
 ## Inferential Results
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
+Question 1:
+
+```{r}
+t.test(Age_yrs~sect, alternative='two.sided', conf.level=.95, var.equal=FALSE, data=alldat)
+```
+
+Question 3:
+
+```{r}
+t.test(time_down_up~Gender, alternative='two.sided', conf.level=.95, var.equal=FALSE, data=alldat)
+```
+
+
+From the means above the t.test, it dipicts that overall, males have a faster time going down and up the stairs.
+
+
+
+#Bootstrap 
+Question 1:
+```{r}
+source("bootstrap.R") 
+#need a to have just the age data from section 2
+a=na.omit(alldat$Age_yrs[alldat$sect=="Pm"])
+b=na.omit(alldat$Age_yrs[alldat$sect=="Eve"])
+bootstrp(a,b,1000)
+```
+
+
+Question 3:
+```{r}
+source("bootstrap.R") 
+#need a to have just the age data from section 2
+a=na.omit(alldat$time_down_up[alldat$Gender=="F"])
+b=na.omit(alldat$time_down_up[alldat$Gender=="M"])
+bootstrp(a,b,1000)
+```
+
 
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+Question 1: From the results and data above, it seems the evening class has a higher average of age comapred to the PM class.
+
+
+Question 3: From the results and data above, it seems Males have an overall faster time going up and down the stairs compared to females.
